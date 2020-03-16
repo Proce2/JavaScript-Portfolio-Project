@@ -38,8 +38,7 @@ html {
 
 .container {
     max-width: 850px;
-    margin-right: 10%;
-    margin-left: 13%;
+    margin-left: 20%;
 }
 
 @keyframes rotate {
