@@ -1,11 +1,17 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body,
 html {
-    padding: 0px;
-    margin: 0px;
     color: #fff;
     background: rgb(0, 0, 0);
     scroll-behavior: smooth;
     font-family: 'Raleway', sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
 }
 
 #loading {
@@ -30,6 +36,12 @@ html {
     margin: 0;
 }
 
+.container {
+    max-width: 850px;
+    margin-right: 10%;
+    margin-left: 13%;
+}
+
 @keyframes rotate {
     0% {
         transform: rotate(0deg);
@@ -43,30 +55,40 @@ html {
 /*nav bar*/
 
 nav {
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
+    font-family: 'consolas';
+    font-size: 15px;
     width: 100%;
-    position: absolute;
-    padding: 10px 10px;
-    transition: all 1s;
     z-index: 998;
+    position: fixed;
+    transition: all 0.3s;
 }
 
 .nav {
+    display: flex;
+    padding: 5px 7px;
     justify-content: space-between;
 }
 
+.nav span {
+    margin-top: 15px;
+}
+
 .nav-items {
-    display: inline-block;
+    display: flex;
 }
 
 .nav-items a {
     box-sizing: border-box;
-    margin: 0px 30px;
     text-decoration: none;
     color: white;
-    transition: padding 0.2s;
+    padding: 10px 0 5px 0;
+    border-bottom: 2px solid transparent;
+    margin: 0px 30px;
+    transition: border 0.5s;
+}
+
+.nav-items a:hover {
+    border-bottom: 3px solid #fff;
 }
 
 
@@ -74,9 +96,8 @@ nav {
 
 .nav-scroll {
     background: black;
-    font-size: 14px;
-    position: fixed;
-    transition: all 1s;
+    font-size: 12px;
+    transition: all 0.3s;
 }
 
 
@@ -86,7 +107,7 @@ nav {
     width: 100%;
     padding: 40vh 0vh 0vh 6vh;
     position: absolute;
-    transition: 0.6s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
 #header div {
@@ -94,47 +115,138 @@ nav {
     font-size: 51px;
 }
 
-#title {
-    font-size: 40px;
-}
-
 #middle {
     width: 100%;
-    height: 50vh;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("https://images.unsplash.com/photo-1494587351196-bbf5f29cff42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&&w=1351&q=80");
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("https://images.unsplash.com/photo-1494587351196-bbf5f29cff42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&&w=1351&q=80") center center fixed;
     background-size: 100%;
     background-repeat: no-repeat;
     color: white;
-    display: flex;
-    transition: 1s ease-in-out;
-    padding: 50vh 0vh 0vh 6vh;
+    transition: 0.5s ease-in-out;
+    padding: 45vh 0vh 0vh 0vh;
 }
 
-#tagline {
-    font-size: 25px;
+.tittle {
+    margin-left: 5%;
+    margin-right: auto;
+}
+
+#tittle-1 {
+    font-size: 60px;
     width: 100%;
-    color: #be3144;
-    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin: auto;
 }
 
-#portfolio {
-    width: 80%;
-    padding: 2% 10%;
+#tittle-2 {
+    font-size: 30px;
+    width: 100%;
+    color: white;
+    margin: 0px 15px;
 }
 
-#portfolio div h1 {
+.portafolio {
+    font-family: 'Comfortaa', cursive;
+}
+
+.portafolio div h1 {
     font-size: 40px;
     background-image: linear-gradient(to left, #FF416C 0%, #FF4B2B 100%);
     -webkit-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 500% 500%;
     -webkit-animation: Gradient 20s ease infinite;
     -moz-animation: Gradient 20s ease infinite;
     -o-animation: Gradient 20s ease infinite;
     animation: Gradient 20s ease infinite;
-    padding: 40px 0px 0px 0px;
-    margin: auto;
+    margin: 30px 0px;
+}
+
+#skills {
+    padding: 25px 0px 50px;
+}
+
+#skills-text ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+#skills-text ul h2 {
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.skills-text-2 {
+    margin: 0px 35px;
+}
+
+#work {
+    padding: 25px 0px 0px;
+}
+
+.flex-1 {
+    display: flex;
+    padding-bottom: 25px;
+}
+
+.flex-2 {
+    display: flex;
+    padding-top: 25px;
+}
+
+.col-1 {
+    flex: 3;
+}
+
+.text-project {
+    padding: 10px 0px 20px 0px;
+}
+
+.col-2 {
+    flex: 2;
+    margin-right: 50px;
+    margin-left: 60px;
+}
+
+.browser {
+    display: block;
+    margin: 30px auto;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 20px -5px #131313;
+    -moz-box-shadow: 0px 0px 20px -5px #131313;
+    box-shadow: 0px 0px 20px -5px #131313;
+    border-bottom: 10px solid #131313;
+    border-top: 10px solid #131313;
+}
+
+.browser-header {
+    background: #131313;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+}
+
+.browser-body {
+    height: auto;
+    border-right: 2px solid #131313;
+    border-left: 2px solid #131313;
+}
+
+.browser-body img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.d-block {
+    display: block;
+}
+
+#contact {
+    padding-bottom: 200px;
+    padding-top: 30px;
 }
 
 #contact form {
@@ -143,25 +255,26 @@ nav {
 
 #contact form input {
     width: 46%;
-    margin: 10px 1%;
+    margin: 20px 1%;
     background: transparent;
     border: 0px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     padding: 8px 10px;
-    font-size: 18px;
+    font-family: 'Consolas';
+    font-size: 14px;
     transition: 0.4s ease-in-out;
     color: #fff;
 }
 
 #contact form textarea {
     width: 96%;
-    height: 30px;
-    margin: 10px 1%;
+    margin: 20px 1%;
     padding: 8px 10px;
     border: 0px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     padding: 8px 10px;
-    font-size: 18px;
+    font-family: 'Consolas';
+    font-size: 14px;
     background: transparent;
     resize: none;
     transition: 0.4s ease-in-out;
@@ -178,8 +291,18 @@ nav {
     border-bottom: 2px solid rgba(255, 255, 255, 1);
 }
 
-::placeholder {
-    color: #fff;
+.btn_one {
+    color: white;
+    padding: 10px 40px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    font-size: 18px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    background: transparent;
+    transition: 0.4s ease-in-out;
+    display: block;
+    margin: auto;
 }
 
 .btn_one:hover {
@@ -188,40 +311,18 @@ nav {
     color: #000;
 }
 
+.btn_one a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .project div {
     font-weight: normal;
-}
-
-.btn_one {
-    color: #fff;
-    padding: 10px 40px;
-    border-radius: 50px;
-    border: 2px solid #fff;
-    font-size: 18px;
-    background: #000;
-    transition: 0.4s ease-in-out;
-    margin: 30px 10px;
-}
-
-.btn_two {
-    color: #000;
-    padding: 10px 40px;
-    border-radius: 50px;
-    border: 2px solid #fff;
-    font-size: 18px;
-    background: #fff;
-    transition: 0.4s ease-in-out;
-    margin: 30px 10px;
-}
-
-.btn_two:hover {
-    background: transparent;
-    cursor: pointer;
-    color: #fff;
+    text-align: center;
 }
 
 #details {
-    margin: 6vh 0px;
+    text-align: center;
 }
 
 .btn_social {
@@ -281,7 +382,9 @@ nav {
 
 #footer {
     width: 100%;
-    padding: 10vh 0px;
+    text-align: center;
+    font-family: 'Consolas';
+    padding: 20px 0px 40px 0px;
 }
 
 #footer a {

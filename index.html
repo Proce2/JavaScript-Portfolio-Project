@@ -6,107 +6,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>David J Moraes</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="index2.css">
-
-
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-
-
     <div id="loading">
         <div id="spinner"></div>
     </div>
-    <div id="header" class="animated slideInDown" style="animation-delay:1.8s;">
-        <div id="title">David J Moraes</div><br>
-
-    </div>
-
-    <!-- main nav -->
+    <!-- nav -->
     <nav>
-
-        <div class="nav-items">
-            <a href="#skills">skills</a>
-            <a href="#work">Projects</a>
-            <a href="#contact">contact</a>
-
-        </div>
+        <div class="container nav">
+            <span>David J Moraes</span>
+            <div class="nav-items">
+                <a href="#skills">skills</a>
+                <a href="#work">Projects</a>
+                <a href="#contact">contact</a>
+            </div>
         </div>
     </nav>
-    <!-- end main nav -->
-
-    <!-- tittle -->
-    <div>
-        <div id="middle">
-            <div id="tagline" class="animated zoomIn" style="animation-delay:1.8s;">
-                Desenvolvedor Web / Analista
-            </div>
+    <!-- end nav -->
+    <!-- middle -->
+    <section id="middle">
+        <div class="tittle">
+            <h1 id="tittle-1" class="animated slideInDown" style="animation-delay:1.8s;">Desenvolvedor Web </h1>
+            <h2 id="tittle-2" class="animated slideInDown" style="animation-delay:1.8s;">Frontend Engineer</h2>
         </div>
-    </div>
-    <!-- end tittle -->
-
+    </section>
+    <!-- end middle -->
     <!-- content -->
-    <div id="portfolio">
+    <div class="container portafolio">
         <div id="skills">
-            <h1>skills.</h1>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum tincidunt nulla, id semper mi cursus ac. Fusce turpis urna, condimentum sit amet dolor at, vulputate ultrices massa. Vestibulum non euismod nulla, eu pretium risus. Curabitur porta molestie
-                    vulputate. Sed tortor enim, rhoncus vel mauris vitae, elementum condimentum augue. Donec fermentum lobortis lectus, in feugiat turpis faucibus et. Pellentesque luctus metus vitae augue lobortis sagittis vitae sit amet enim. Morbi egestas
-                    velit ac arcu fermentum lacinia. Nullam eget hendrerit neque. Cras et laoreet ante. Vivamus condimentum euismod commodo. Nulla pulvinar, turpis vitae condimentum tempor, ex ex eleifend quam, et maximus sapien mi sed est. Donec elit
-                    mi, dictum nec magna quis, mollis sollicitudin ligula. Maecenas ullamcorper ante vel ullamcorper mollis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                </p>
+            <h1>skills</h1>
+            <div id="skills-text">
+                <ul>
+                    <h2>Frontend</h2>
+                    <li>JavaScript (ES6)</li>
+                    <li>jQuery</li>
+                    <li>CSS3</li>
+                    <li>HTML5</li>
+                    <li>Canvas</li>
+                    <li>Responsive Design</li>
+                </ul>
+                <ul class="skills-text-2">
+                    <h2>Backend</h2>
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                    <li>CodeIgniter</li>
+                    <li>Apache</li>
+                    <li>Hosting</li>
+                    <br>
+                </ul>
+
+                <ul class="skills-text-2">
+                    <h2>Tools</h2>
+                    <li>Composer</li>
+                    <li>SCSS</li>
+                    <li>Gulp</li>
+                    <li>Github</li>
+                    <li>GIT</li>
+                    <li>Bower</li>
+                </ul>
+                <ul class="skills-text-2">
+                    <h2>Protocals and Patterns.</h2>
+                    <li>HTTP</li>
+                    <li>MVC/MV*</li>
+                    <li>SOLID</li>
+                    <li>AJAX</li>
+                    <li>Websockets</li>
+                    <br>
+                </ul>
             </div>
         </div>
-
         <div id="work">
-            <h1>works.</h1>
+            <h1>Projects</h1>
+            <div class="flex-1">
+                <div class="col-1">
+                    <div>
+                        <h2>Rochatop</h2>
+                        <div class="text-project">Sistema de pagamento para uma e-commerce. Alimentado por google APIs o plug-in permite criar facilmente um carrinho de compras dinâmico e interativo para o seu site de comércio eletrônico.</div>
 
-            <div class="project">
-                <h2>project title 1</h2>
-                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum tincidunt nulla, id semper mi cursus ac. Fusce turpis urna, condimentum sit amet dolor at, vulputate ultrices massa. Vestibulum non euismod nulla, eu pretium risus. Curabitur
-                    porta molestie vulputate.</div>
-                <button class="btn_one">visit project</button>
-            </div>
-
-            <div class="project">
-                <h2>project title 2</h2>
-                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum tincidunt nulla, id semper mi cursus ac. Fusce turpis urna, condimentum sit amet dolor at, vulputate ultrices massa. Vestibulum non euismod nulla, eu pretium risus. Curabitur
-                    porta molestie vulputate.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum tincidunt nulla, id semper mi cursus ac. Fusce turpis urna, condimentum sit amet dolor at, vulputate ultrices massa. Vestibulum non euismod
-                    nulla, eu pretium risus. Curabitur porta molestie vulputate.
+                    </div>
                 </div>
-                <button class="btn_one">visit project</button>
-                <button class="btn_two">code</button>
+                <div class="col-2">
+                    <div class="browser">
+                        <div class="browser-body">
+                            <img class="d-block" src="img/project_1.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
-
+            <div class="flex-2">
+                <div class="col-1">
+                    <div>
+                        <h2>Pomodoro Timer</h2>
+                        <div class="text-project">Uma dos projetos mais comuns dentro os desenvolvedores iniciantes, esse projeto me ajudou a melhorar minhas habilidades em JavaScrip e em SCSS.</div>
+                        <button class="btn_one">
+                    <a href="PomodoroTimer.html">visit project</a>
+                </button>
+                    </div>
+                </div>
+                <div class="col-2 order-1">
+                    <div class="browser">
+                        <div class="browser-body">
+                            <img class="d-block" src="img/project_2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
         <div id="contact">
             <h1>Contact</h1>
-            <form>
-                <input type="text" placeholder="name" required>
-                <input type="email" placeholder="email" required><br>
-                <textarea placeholder="your message" required rows="5"></textarea><br>
+            <form action="https://formspree.io/xvoqgeyv" method="POST">
+                <input type="text" placeholder="name" name="name">
+                <input type="email" placeholder="email" name="_replyto"><br>
+                <textarea placeholder="your message" required="" rows="1"></textarea><br>
                 <button class="btn_one">send</button>
             </form>
-            <div id="details">
-                <a class="btn_social"><i class="fas fa-phone"></i></a>
-                <a class="btn_social"><i class="fas fa-at"></i></a>
-                <a class="btn_social"><i class="fab fa-twitter"></i></a>
-                <a class="btn_social"><i class="fab fa-dribbble"></i></a>
-            </div>
+
         </div>
     </div>
-    <div id="footer">
-        made on earth by a human <br><br> <a href="https://imfunniee.github.io">imfunny</a>
+    <div class="container">
+        <div id="details">
+            <a href="mailto:davidjosemoraes@gmail.com" class="btn_social"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/moraesdavid" class="btn_social"><i class="fab fa-github"></i></i></a>
+            <a href="https://twitter.com/DavidJMoraesC" class="btn_social"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div id="footer">
+            2019 | made by <a href="">Proce</a>
+        </div>
     </div>
     <!-- end content -->
-    <script src="index2.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript"></script>
 
 </body>
 

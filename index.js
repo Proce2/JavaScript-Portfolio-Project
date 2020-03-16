@@ -1,11 +1,11 @@
- /* Content */
+ /* Content-spinner */
 
  var width = $(window).width();
 
  window.onscroll = function() {
      if ((width >= 900)) {
          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-             $("#middle").css("background-size", "120% auto");
+             $("#middle").css("background-size", "140% auto");
          } else {
              $("#middle").css("background-size", "100% auto");
          }
@@ -20,7 +20,7 @@
      }, 800);
  }, 1450);
 
- /* end content */
+ /* end Content-spinner */
 
  /* Nav Bar */
 
@@ -62,7 +62,7 @@
              (model.navToggled) ? app.toggleNav(): '';
              $('html, body').animate({
                  scrollTop: $(this.hash).offset().top
-             }, 500);
+             }, 200);
          },
      }
 
