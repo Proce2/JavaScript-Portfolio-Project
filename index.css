@@ -37,8 +37,8 @@ html {
 }
 
 .container {
-    max-width: 850px;
-    margin-left: 20%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 @keyframes rotate {
@@ -56,10 +56,11 @@ html {
 nav {
     font-family: 'consolas';
     font-size: 15px;
-    width: 100%;
     z-index: 998;
     position: fixed;
     transition: all 0.3s;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .nav {
@@ -146,6 +147,8 @@ nav {
 
 .portafolio {
     font-family: 'Comfortaa', cursive;
+    margin-left: 10%;
+    width: 70%;
 }
 
 .portafolio div h1 {
@@ -158,7 +161,7 @@ nav {
     -moz-animation: Gradient 20s ease infinite;
     -o-animation: Gradient 20s ease infinite;
     animation: Gradient 20s ease infinite;
-    margin: 30px 0px;
+    margin: 20px 0px;
 }
 
 #skills {
@@ -196,6 +199,7 @@ nav {
 
 .col-1 {
     flex: 3;
+    padding: 35px 0px 0px 0px;
 }
 
 .text-project {
@@ -301,7 +305,6 @@ nav {
     background: transparent;
     transition: 0.4s ease-in-out;
     display: block;
-    margin: auto;
 }
 
 .btn_one:hover {
@@ -359,10 +362,6 @@ nav {
         font-size: 30px;
     }
     .btn_one {
-        font-size: 14px;
-        padding: 8px 20px;
-    }
-    .btn_two {
         font-size: 14px;
         padding: 8px 20px;
     }
