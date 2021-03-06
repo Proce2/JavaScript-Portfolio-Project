@@ -11,7 +11,6 @@ html {
     scroll-behavior: smooth;
     font-family: 'Raleway', sans-serif;
     margin: 0;
-    scroll-behavior: smooth;
 }
 
 #loading {
@@ -69,10 +68,11 @@ nav {
     justify-content: space-between;
 }
 
-.nav span {
-    margin-top: 15px;
-}
+.name {
+    padding: 10px 0 5px 0;
+    margin: 0px 30px;
 
+}
 .nav-items {
     display: flex;
 }
@@ -106,8 +106,7 @@ nav {
 #header {
     width: 100%;
     padding: 40vh 0vh 0vh 6vh;
-    position: absolute;
-    transition: 0.1s ease-in-out;
+    
 }
 
 #header div {
@@ -116,15 +115,17 @@ nav {
 }
 
 #middle {
-    width: 100%;
     height: 100vh;
     background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("https://images.unsplash.com/photo-1494587351196-bbf5f29cff42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&&w=1351&q=80") center center fixed;
-    background-size: 100%;
     background-repeat: no-repeat;
     color: white;
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
     padding: 45vh 0vh 0vh 0vh;
+    background-size: 100% 100%;
+    background-position: bottom;
+    
 }
+
 
 .tittle {
     margin-left: 5%;
@@ -136,6 +137,7 @@ nav {
     width: 100%;
     color: white;
     margin: auto;
+    animation: appear 4s normal;
 }
 
 #tittle-2 {
@@ -143,43 +145,42 @@ nav {
     width: 100%;
     color: white;
     margin: 0px 15px;
+    animation: appear 4s normal;
 }
 
 .portafolio {
     font-family: 'Comfortaa', cursive;
-    margin-left: 10%;
+    margin-left: auto;
+	margin-right: auto;
     width: 70%;
 }
 
 .portafolio div h1 {
-    font-size: 40px;
+    
     background-image: linear-gradient(to left, #FF416C 0%, #FF4B2B 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 500% 500%;
-    -webkit-animation: Gradient 20s ease infinite;
-    -moz-animation: Gradient 20s ease infinite;
-    -o-animation: Gradient 20s ease infinite;
-    animation: Gradient 20s ease infinite;
+    -
     margin: 20px 0px;
 }
 
-#skills {
+#Links {
     padding: 25px 0px 50px;
 }
 
-#skills-text ul {
+#Links-text ul {
     display: inline-block;
     list-style-type: none;
 }
 
-#skills-text ul h2 {
+#Links-text ul h2 {
     font-weight: 700;
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
 }
 
-.skills-text-2 {
+.Links-text-2 {
     margin: 0px 35px;
 }
 
@@ -194,7 +195,7 @@ nav {
 
 .flex-2 {
     display: flex;
-    padding-top: 25px;
+    
 }
 
 .col-1 {
@@ -248,8 +249,9 @@ nav {
 }
 
 #contact {
-    padding-bottom: 200px;
-    padding-top: 30px;
+    margin-top: 200px;
+    margin-bottom: 90px;
+    
 }
 
 #contact form {
@@ -257,7 +259,7 @@ nav {
 }
 
 #contact form input {
-    width: 46%;
+    
     margin: 20px 1%;
     background: transparent;
     border: 0px;
@@ -265,14 +267,13 @@ nav {
     padding: 8px 10px;
     font-family: 'Consolas';
     font-size: 14px;
-    transition: 0.4s ease-in-out;
+    transition: 0.6s ease-in-out;
     color: #fff;
 }
 
 #contact form textarea {
-    width: 96%;
+    width: auto;
     margin: 20px 1%;
-    padding: 8px 10px;
     border: 0px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     padding: 8px 10px;
@@ -305,6 +306,7 @@ nav {
     background: transparent;
     transition: 0.4s ease-in-out;
     display: block;
+    margin-top: 30px;
 }
 
 .btn_one:hover {
@@ -352,10 +354,11 @@ nav {
         font-size: 30px;
     }
     #middle {
-        width: 100%;
+      
         border-radius: 0px;
         height: 80vh;
         background-size: cover;
+        height: 100vh;
     }
     #tagline {
         width: 100%;
@@ -377,6 +380,33 @@ nav {
         padding: 10px 11px;
     }
 }
+
+@media (max-width: 500px) {
+    .name {
+        display: none;
+    }
+
+    .container {
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media (min-height: 680px), screen and (orientation: portrait) {
+    .flex-1, .flex-2 {display: block;}
+
+}
+
+@media screen and (max-width: 500px) {
+    #tittle-1 {
+      font-size: 33px;
+    }
+
+    #tittle-2 {
+        font-size: 25px;
+    }
+  }
 
 #footer {
     width: 100%;
@@ -420,38 +450,23 @@ button:focus {
     background: #555;
 }
 
-@-webkit-keyframes Gradient {
+@keyframes appear {
     0% {
-        background-position: 0% 50%
+    -webkit-transform: scale(0) translateY(0px);
+            transform: scale(0) translateY(0px);
+    
+    opacity: 0.2;
     }
-    50% {
-        background-position: 100% 50%
+    60% {
+    -webkit-transform: scale(0) translateY(5px);
+            transform: scale(0) translateY(5px);
+    
+    opacity: 0.4;
     }
     100% {
-        background-position: 0% 50%
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+            
+    opacity: 1;
     }
-}
-
-@-moz-keyframes Gradient {
-    0% {
-        background-position: 0% 50%
     }
-    50% {
-        background-position: 100% 50%
-    }
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-@keyframes Gradient {
-    0% {
-        background-position: 0% 50%
-    }
-    50% {
-        background-position: 100% 50%
-    }
-    100% {
-        background-position: 0% 50%
-    }
-}

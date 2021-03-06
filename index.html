@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>David J Moraes</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
@@ -22,11 +21,11 @@
     <!-- nav -->
     <nav>
         <div class="container nav">
-            <span>David J Moraes</span>
+            <a class="name">David J Moraes</a>
             <div class="nav-items">
-                <a href="#skills">skills</a>
+                <a href="#Links">Links</a>
                 <a href="#work">Projects</a>
-                <a href="#contact">contact</a>
+                <a href="#Contact">contact</a>
             </div>
         </div>
     </nav>
@@ -34,43 +33,13 @@
     <!-- middle -->
     <section id="middle">
         <div class="tittle">
-            <h1 id="tittle-1" class="animated slideInDown" style="animation-delay:1.8s;">Desenvolvedor Web </h1>
-            <h2 id="tittle-2" class="animated slideInDown" style="animation-delay:1.8s;">Frontend Engineer</h2>
+            <h1 id="tittle-1" >Desenvolvedor Web </h1>
+            <h2 id="tittle-2" >Frontend Engineer</h2>
         </div>
     </section>
     <!-- end middle -->
     <!-- content -->
     <div class="portafolio">
-        <div id="skills">
-            <h1>skills</h1>
-            <div id="skills-text">
-                <ul>
-                    <h2>Frontend</h2>
-                    <li>JavaScript (ES6)</li>
-                    <li>jQuery</li>
-                    <li>CSS3/SASS</li>
-                    <li>HTML5</li>
-                    <li>Responsive Design</li>
-                </ul>
-                <ul class="skills-text-2">
-                    <h2>Backend</h2>
-                    <li>PHP</li>
-                    <li>MySQL</li>
-                    <li>Python</li>
-                    <li>ASP.NET</li>
-                    <br>
-                </ul>
-
-                <ul class="skills-text-2">
-                    <h2>Control</h2>
-                    <li>Composer</li>
-                    <li>Github</li>
-                    <li>GIT</li>
-                    <li>SCRUM</li>
-                    <li>br</li>
-                </ul>
-            </div>
-        </div>
         <div id="work">
             <h1>Projects</h1>
             <div class="flex-1">
@@ -78,24 +47,21 @@
                     <div>
                         <h2>Rochatop</h2>
                         <div class="text-project">Sistema de pagamento para uma e-commerce. Alimentado por google APIs o plug-in permite criar facilmente um carrinho de compras dinâmico e interativo para o seu site de comércio eletrônico.</div>
-
                     </div>
                 </div>
                 <div class="col-2">
-                    <div class="browser">
-                        <div class="browser-body">
-                            <img class="d-block" src="img/project_1.png" alt="">
-                        </div>
-                    </div>
                 </div>
             </div>
+        </div>
+        <div id="Links">
+            <h1>Links</h1>
             <div class="flex-2">
                 <div class="col-1">
                     <div>
                         <h2>Pomodoro Timer</h2>
                         <div class="text-project">Uma dos projetos mais comuns dentro os desenvolvedores iniciantes, esse projeto me ajudou a melhorar minhas habilidades em JavaScrip e em SCSS.</div>
                         <button class="btn_one">
-                    <a href="PomodoroTimer.html">visit project</a>
+                    <a href="PomodoroTimer.html">view demo</a>
                 </button>
                     </div>
                 </div>
@@ -113,10 +79,9 @@
             <form action="https://formspree.io/xvoqgeyv" method="POST">
                 <input type="text" placeholder="name" name="name">
                 <input type="email" placeholder="email" name="_replyto"><br>
-                <textarea placeholder="your message" required="" rows="1"></textarea><br>
+                <textarea placeholder="your message" required="" rows="3" cols="46"></textarea><br>
                 <button class="btn_one">send</button>
             </form>
-
         </div>
     </div>
     <div class="container">
