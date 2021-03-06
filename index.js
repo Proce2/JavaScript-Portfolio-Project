@@ -3,14 +3,12 @@
  var width = $(window).width();
 
  window.onscroll = function() {
-     if ((width >= 900)) {
          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-             $("#middle").css("background-size", "140% auto");
+             $("#middle").css("background-size", "130% 140%")
          } else {
-             $("#middle").css("background-size", "100% auto");
+             $("#middle").css("background-size", "100% 100%");
          }
-     }
- };
+       };
 
  setTimeout(function() {
      $("#loading").addClass("animated fadeOut");
@@ -22,22 +20,15 @@
 
  /* end Content-spinner */
 
- /* Nav Bar */
+ /* Nav Bar, smoothScroll, image*/
 
  (function() {
-
-     var model = {
-         skillCounter: 0,
-         navToggled: false,
-     }
 
      var app = {
 
          init: function() {
              this.cacheDOM();
              this.bindEvents();
-             this.toggleScroll();
-
          },
 
          cacheDOM: function() {
@@ -59,7 +50,6 @@
 
          smoothScroll: function(e) {
              e.preventDefault();
-             (model.navToggled) ? app.toggleNav(): '';
              $('html, body').animate({
                  scrollTop: $(this.hash).offset().top
              }, 200);
@@ -70,4 +60,4 @@
 
  })();
 
- /* end Nav Bar */
+ 
