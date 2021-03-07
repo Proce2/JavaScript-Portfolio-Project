@@ -137,7 +137,7 @@ nav {
     width: 100%;
     color: white;
     margin: auto;
-    animation: appear 4s normal;
+    animation: appear 1s ease-in-out;
 }
 
 #tittle-2 {
@@ -145,7 +145,7 @@ nav {
     width: 100%;
     color: white;
     margin: 0px 15px;
-    animation: appear 4s normal;
+    animation: appear 1s ease-in-out;
 }
 
 .portafolio {
@@ -161,12 +161,11 @@ nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 500% 500%;
-    -
-    margin: 20px 0px;
+ 
 }
 
 #Links {
-    padding: 25px 0px 50px;
+    padding: 90px 0px 50px;
 }
 
 #Links-text ul {
@@ -185,7 +184,7 @@ nav {
 }
 
 #work {
-    padding: 25px 0px 0px;
+    padding: 90px 0px 0px;
 }
 
 .flex-1 {
@@ -200,7 +199,7 @@ nav {
 
 .col-1 {
     flex: 3;
-    padding: 35px 0px 0px 0px;
+    padding: 30px 0px 0px 0px;
 }
 
 .text-project {
@@ -458,15 +457,15 @@ button:focus {
     opacity: 0.2;
     }
     60% {
-    -webkit-transform: scale(0) translateY(5px);
-            transform: scale(0) translateY(5px);
+    -webkit-transform: scale(0) translateY(7px);
+            transform: scale(0) translateY(7px);
     
-    opacity: 0.4;
+    opacity: 0.5;
     }
     100% {
     -webkit-transform: translateY(10px);
             transform: translateY(10px);
             
-    opacity: 1;
+    opacity: 0.9;
     }
     }
