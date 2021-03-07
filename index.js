@@ -1,5 +1,4 @@
- /* Content-spinner */
-
+ 
  var width = $(window).width();
 
  window.onscroll = function() {
@@ -10,6 +9,7 @@
          }
        };
 
+       /* Content-spinner */
  setTimeout(function() {
      $("#loading").addClass("animated fadeOut");
      setTimeout(function() {
@@ -18,7 +18,7 @@
      }, 800);
  }, 1450);
 
- /* end Content-spinner */
+ 
 
  /* Nav Bar, smoothScroll, image*/
 
@@ -29,6 +29,7 @@
          init: function() {
              this.cacheDOM();
              this.bindEvents();
+            
          },
 
          cacheDOM: function() {
